@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARU Tech Solutions - ICT & Computer Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>MARU Tech Solutions</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to MARU Tech Solutions</h1>
+            <p class="hero-subtitle">Your Trusted Partner in ICT & Computer Maintenance</p>
+            <p class="hero-description">We provide comprehensive IT solutions and expert computer maintenance services to keep your technology running smoothly.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-image.jpg" alt="IT Solutions" class="hero-img" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop'">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-service="maintenance">
+                    <img src="images/computer-maintenance.jpg" alt="Computer Maintenance" class="service-image" onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop'">
+                    <div class="service-icon">🖥️</div>
+                    <h3>Computer Maintenance</h3>
+                    <p>Regular maintenance, hardware repairs, and system optimization to keep your computers running at peak performance.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="network">
+                    <img src="images/network-solutions.jpg" alt="Network Solutions" class="service-image" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop'">
+                    <div class="service-icon">🌐</div>
+                    <h3>Network Solutions</h3>
+                    <p>Design, installation, and maintenance of network infrastructure for seamless connectivity.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="security">
+                    <img src="images/it-security.jpg" alt="IT Security" class="service-image" onerror="this.src='https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=300&fit=crop'">
+                    <div class="service-icon">🔒</div>
+                    <h3>IT Security</h3>
+                    <p>Comprehensive security solutions including antivirus installation, firewall setup, and data protection.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="cloud">
+                    <img src="images/cloud-services.jpg" alt="Cloud Services" class="service-image" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop'">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Services</h3>
+                    <p>Cloud migration, setup, and management services to modernize your IT infrastructure.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="support">
+                    <img src="images/technical-support.jpg" alt="Technical Support" class="service-image" onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop'">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Technical Support</h3>
+                    <p>24/7 technical support and troubleshooting services for all your IT needs.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="repair">
+                    <img src="images/device-repair.jpg" alt="Device Repair" class="service-image" onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop'">
+                    <div class="service-icon">📱</div>
+                    <h3>Device Repair</h3>
+                    <p>Expert repair services for laptops, desktops, printers, and other computer peripherals.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Detail Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About MARU Tech Solutions</h2>
+            <div class="about-content">
+                <div class="about-image-section">
+                    <img src="images/about-team.jpg" alt="Our Team" class="about-image" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop'">
+                </div>
+                <div class="about-text">
+                    <p>MARU Tech Solutions is a leading provider of ICT services and computer maintenance solutions in Uganda. With years of experience in the industry, we are committed to delivering exceptional service and support to our clients across Kampala and throughout Uganda.</p>
+                    <p>Our team of certified technicians specializes in:</p>
+                    <ul class="about-list">
+                        <li>Computer hardware and software troubleshooting</li>
+                        <li>Network infrastructure design and maintenance</li>
+                        <li>Data backup and recovery solutions</li>
+                        <li>System upgrades and optimization</li>
+                        <li>IT consulting and strategic planning</li>
+                    </ul>
+                    <p>We pride ourselves on providing reliable, cost-effective solutions that help businesses and individuals maximize their technology investments.</p>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <img src="images/contact-image.jpg" alt="Contact Us" class="contact-image" onerror="this.src='https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=500&h=400&fit=crop'">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@marutechsolutions.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+256 755 906 005</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Kampala, Uganda</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MARU Tech Solutions</h3>
+                    <p>Your trusted partner for all ICT and computer maintenance needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Computer Maintenance</li>
+                        <li>Network Solutions</li>
+                        <li>IT Security</li>
+                        <li>Cloud Services</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MARU Tech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        var hamburger = document.querySelector('.hamburger');
+        var navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Close menu when clicking on a link
+        var navLinks = document.querySelectorAll('.nav-menu a');
+        for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        }
+
+        // Smooth scrolling
+        var anchors = document.querySelectorAll('a[href^="#"]');
+        for (var j = 0; j < anchors.length; j++) {
+            anchors[j].addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        }
+
+        // Form submission
+        var contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        }
+
+        // Service details data
+        var serviceDetails = {
+            maintenance: {
+                title: "Computer Maintenance",
+                image: "images/computer-maintenance.jpg",
+                description: "Keep your computers running at peak performance with our comprehensive maintenance services.",
+                features: [
+                    "Regular system cleaning and optimization",
+                    "Hardware diagnostics and repairs",
+                    "Software updates and installations",
+                    "Virus and malware removal",
+                    "Performance tuning and speed optimization",
+                    "Data backup and recovery",
+                    "Preventive maintenance programs"
+                ],
+                pricing: "Starting from 350,000 UGX/month"
+            },
+            network: {
+                title: "Network Solutions",
+                image: "images/network-solutions.jpg",
+                description: "Complete network infrastructure design, installation, and maintenance for seamless connectivity.",
+                features: [
+                    "Network design and planning",
+                    "Router and switch installation",
+                    "Wireless network setup",
+                    "Network security configuration",
+                    "Network monitoring and maintenance",
+                    "Troubleshooting and optimization",
+                    "24/7 network support"
+                ],
+                pricing: "Custom pricing based on requirements"
+            },
+            security: {
+                title: "IT Security",
+                image: "images/it-security.jpg",
+                description: "Comprehensive security solutions to protect your business from cyber threats.",
+                features: [
+                    "Antivirus and anti-malware installation",
+                    "Firewall configuration and management",
+                    "Data encryption services",
+                    "Security audits and assessments",
+                    "Employee security training",
+                    "Intrusion detection systems",
+                    "Regular security updates"
+                ],
+                pricing: "Starting from 550,000 UGX/month"
+            },
+            cloud: {
+                title: "Cloud Services",
+                image: "images/cloud-services.jpg",
+                description: "Modernize your IT infrastructure with our cloud migration and management services.",
+                features: [
+                    "Cloud migration planning and execution",
+                    "Cloud storage setup and management",
+                    "Backup and disaster recovery",
+                    "Cloud security configuration",
+                    "Cost optimization strategies",
+                    "Multi-cloud solutions",
+                    "Ongoing cloud support"
+                ],
+                pricing: "Starting from 750,000 UGX/month"
+            },
+            support: {
+                title: "Technical Support",
+                image: "images/technical-support.jpg",
+                description: "24/7 technical support and troubleshooting services for all your IT needs.",
+                features: [
+                    "24/7 helpdesk support",
+                    "Remote troubleshooting",
+                    "On-site technical assistance",
+                    "Software installation and configuration",
+                    "Hardware setup and maintenance",
+                    "User training and support",
+                    "Priority response times"
+                ],
+                pricing: "Starting from 280,000 UGX/month"
+            },
+            repair: {
+                title: "Device Repair",
+                image: "images/device-repair.jpg",
+                description: "Expert repair services for all your computer devices and peripherals.",
+                features: [
+                    "Laptop and desktop repairs",
+                    "Screen replacement services",
+                    "Hardware component replacement",
+                    "Printer and scanner repairs",
+                    "Data recovery services",
+                    "Warranty repairs",
+                    "Quick turnaround times"
+                ],
+                pricing: "Starting from 180,000 UGX per repair"
+            }
+        };
+
+        // Service modal functionality
+        var modal = document.getElementById('serviceModal');
+        var serviceCards = document.querySelectorAll('.service-card');
+        var closeModal = document.querySelector('.close-modal');
+
+        function openServiceModal(serviceId) {
+            var service = serviceDetails[serviceId];
+            if (!service) return;
+
+            var modalBody = document.getElementById('modalBody');
+            var featuresHtml = '';
+            for (var f = 0; f < service.features.length; f++) {
+                featuresHtml += '<li>' + service.features[f] + '</li>';
+            }
+            modalBody.innerHTML = 
+                '<div class="modal-header">' +
+                    '<img src="' + service.image + '" alt="' + service.title + '" class="modal-image">' +
+                    '<h2>' + service.title + '</h2>' +
+                '</div>' +
+                '<div class="modal-body">' +
+                    '<p class="modal-description">' + service.description + '</p>' +
+                    '<h3>What We Offer:</h3>' +
+                    '<ul class="modal-features">' + featuresHtml + '</ul>' +
+                    '<div class="modal-pricing">' +
+                        '<strong>Pricing: ' + service.pricing + '</strong>' +
+                    '</div>' +
+                    '<div class="modal-actions">' +
+                        '<a href="#contact" class="cta-button">Get a Quote</a>' +
+                    '</div>' +
+                '</div>';
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeServiceModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Add click handlers to service cards and buttons
+        for (var k = 0; k < serviceCards.length; k++) {
+            var card = serviceCards[k];
+            var serviceId = card.getAttribute('data-service');
+            var serviceBtn = card.querySelector('.service-btn');
+            
+            if (serviceBtn) {
+                serviceBtn.addEventListener('click', function(id) {
+                    return function(e) {
+                        e.stopPropagation();
+                        openServiceModal(id);
+                    };
+                }(serviceId));
+            }
+            
+            card.addEventListener('click', function(id) {
+                return function(e) {
+                    if (e.target && e.target.className && e.target.className.indexOf('service-btn') === -1) {
+                        openServiceModal(id);
+                    }
+                };
+            }(serviceId));
+        }
+
+        // Close modal handlers
+        if (closeModal) {
+            closeModal.addEventListener('click', closeServiceModal);
+        }
+
+        window.addEventListener('click', function(e) {
+            if (e.target == modal) {
+                closeServiceModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                closeServiceModal();
+            }
+        });
+    </script>
+</body>
+</html>
